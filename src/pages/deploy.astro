@@ -5,13 +5,49 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="Tarefa final">
 	<main>
 		<a href='/'><span>&larr;</span>Inicio</a>
-		<h1>Modelos de implantacao</h1>
+		<h1>Modelos de implantação</h1>
 		<ul>
-			<li>Nuvem publica</li>
-			<li>Nuvem privada</li>
-			<li>Nuvem hibrida</li>
-			<li>Nuvem comunitaria</li>
+			<li>
+				<div class="title"><strong>Nuvem pública</strong></div>
+				<p>Os recursos de computação em nuvem são propriedade de terceiros e são fornecidas para o público em geral.</p>
+				<p>Alguns exemplos são Amazon Web Services, Microsoft Azure, Google Cloud Platform, Digital Ocean.</p>
+			</li>
+			<li>
+				<div class="title"><strong>Nuvem privada</strong></div>
+				<p>Uma nuvem privada é aquela que pertence a uma única organização.</p>
+				<p>
+					Por exemplo, uma universidade grande pode ter muitos grupos de pesquisa que trabalham com processamento de dados, e acham viável comprar servidores 
+					e disponibilizá-los para que os grupos de pesquisa façam uso deles.
+				</p>
+			</li>
+			<li>
+				<div class="title"><strong>Nuvem híbrida</strong></div>
+				<p>
+					Quando se escolhe uma combinação do modelo de nuvem privada e nuvem pública, o resultado e uma nuvem híbrida.
+				</p>
+				<p>
+					Um exemplo onde isso pode acontecer sería se uma universidade decide ter uma nuvem privada para fornecer armazenamento de dados para os alunos e grupos de pesquisa,
+					mas não acham viável adquirir hardware para realizar tarefas de processamento de dados, então fazem uso de serviços de processamento de dados oferecidos por algum
+					fornecedor de nuvem pública como a Amazon Web Services.
+				</p>
+			</li>
+			<li>
+				<div class="title"><strong>Nuvem comunitária</strong></div>
+				<p>
+					Esse modelo é como um ponto médio entre uma nuvem pública e privada, pois é uma nuvem compartilhada, mas por um grupo específico de organizações.
+				</p>
+				<p>
+					Um exemplo pode ser uma nuvem comunitária criada por um grupo de universidades que trabalham com pesquisa em IA e precisam de servidores dedicados para isso, 
+					mas uma nuvem privada por cada universidade resulta muito cara, e uma publica não oferece o acceso ao hardware que precisam.
+				</p>
+			</li>
 		</ul>
 
 	</main>
 </Layout>
+
+<style>
+	.title strong {
+		color: rgb(var(--accent));
+	}
+</style>

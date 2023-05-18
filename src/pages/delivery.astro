@@ -7,8 +7,8 @@ import Layout from '../layouts/Layout.astro';
 		<a href='/'><span>&larr;</span>Inicio</a>
 		<h1>Modelos de entrega</h1>
 		<div>
-			O modelo de entrega e a forma em que o recurso
-			 ou conjunto de recursos computacionais sao oferecidos 
+			O modelo de entrega é a forma em que o recurso
+			 ou conjunto de recursos computacionais são oferecidos 
 			 aos clientes.
 		</div>
 		<img src="cloud-delivery-models.png" alt="Deploy models">
@@ -17,38 +17,44 @@ import Layout from '../layouts/Layout.astro';
 		</div>
 		<ul>
 			<li>
-				<div>IaaS (Infrastructure as a Service):</div>
+				<div class="title"><strong>IaaS (Infrastructure as a Service):</strong></div>
 				<p>
-					Se provee acceso a uma infraestrutura computacional virtualizada (servidores, armazenamento, redes) como servico
+					O acceso a uma infraestrutura computacional virtualizada (servidores, armazenamento, redes) é fornecida como serviço.
 				</p>
 				<p>
-					Um exemplo desse modelo de entrega seria o EC2 da Amazon Web Services, o qual e uma maquina virtual que pode ser alugada
-					para levar a cabo qualquer tarefa que possa ser realizada em um servidor, como hospedar um web site ou levar a cabo processamento de dados
+					Um exemplo desse modelo de entrega seria o EC2 da Amazon Web Services, que é uma maquina virtual que pode ser alugada
+					para levar a cabo qualquer tarefa que possa ser realizada em um servidor, como hospedar um web site ou realizar processamento de dados.
 				</p>
 			</li>
 			<li>
-				<div>PaaS (Platform as a Service)</div>
+				<div class="title"><strong>PaaS (Platform as a Service):</strong></div>
 				<p>
-					Neste modelo, alem da infraestrutura virtualizada, tambem se conta com um sistema operacional e o middleware necessario
-					 para poder desenvolver e publicar aplicacoes. Tambem pode incluir o provisionamento de SDKs para facilitar o processo 
+					Neste modelo, além da infraestrutura virtualizada, também há um sistema operacional e o middleware necessário
+					 para poder desenvolver e publicar aplicações. Também pode incluir o provisionamento de SDK (Software Development Kit) para facilitar o processo 
 					 de desenvolvimento de software.
 				</p>
 				<p>
-					Um exemplo desse modelo de entrega pode ser o Elastic Beanstalk da Amazon Web Services, o qual permite desenvolver e implantar aplicacoes
-					fazendo uso de distintos servicos que a Amazon provee, como o servico EC2 para servidores, ou Amazon S3 que e usado para almacenar objetos
+					Um exemplo desse modelo de entrega pode ser o Elastic Beanstalk da Amazon Web Services, que permite desenvolver e implantar aplicações
+					fazendo uso de distintos serviços que a Amazon fornece, como o serviço EC2 para servidores, ou Amazon S3 que é usado para almacenar objetos.
 				</p>
 
 			</li>
 			<li>
-				<div>SaaS (Software as a Service)</div>
+				<div class="title"><strong>SaaS (Software as a Service):</strong></div>
 				<p>
-					O software como servico e basicamente qualquer aplicacao que e consumida pela internet
+					O software como serviço e basicamente qualquer aplicação que é consumida pela internet.
 				</p>
 				<p>
-					Um exemplo desse modelo de entrega pode ser o Google Calendar, que permite gerenciar um calendario accesando ele a traves de qualquer navegador
-					de internet, e onde os nossos dados sao almacenados na nuvem.
+					Um exemplo desse modelo de entrega pode ser o Google Calendar, que permite gerenciar um calendário acessando ele por qualquer navegador
+					de internet, e onde os nossos dados são armazenados na nuvem.
 				</p>
 			</li>
 		</ul>
 	</main>
 </Layout>
+
+<style>
+	.title strong {
+		color: rgb(var(--accent));
+	}
+</style>
