@@ -6,11 +6,38 @@ import Layout from '../layouts/Layout.astro';
 	<main>
 		<a href='/'><span>&larr;</span>Inicio</a>
 		<h1>Principais servicos na AWS</h1>
+		<img src="aws-services.png" alt="aws services" width="650">
 		<ul>
-			<li>EC2</li>
-			<li>S3</li>
-			<li>RDS</li>
-			<li>Lambda</li>
+			<li>
+				<div class="title"><strong>EC2</strong></div>
+				<p>
+					Permite alugar uma maquina virtual aos usuarios, onde os usuários podem lançar as suas aplicações.
+				</p>
+			</li>
+			<li>
+				<div class="title"><strong>RDS</strong></div>
+				<p>
+					É um serviço de banco de dados relacional distribuído da AWS. Ele foi criado para simplificar a configuração, funcionamento, e o escalamento de um banco de dados relacional.
+				</p>
+			</li>
+			<li>
+				<div class="title"><strong>Lambda</strong></div>
+				<p>
+					É uma plataforma orientada a eventos de computaçao serverless que executa código em resposta a eventos e automaticamente gerencia os recursos computacionais requeridos por esse código.
+				</p>
+			</li>
+			<li>
+				<div class="title"><strong>S3</strong></div>
+				<p>
+					É um serviço que fornece a AWS para o armazenamento de objetos fazendo uso de uma interface web.
+				</p>
+			</li>
 		</ul>
 	</main>
 </Layout>
+
+<style>
+	.title strong {
+		color: rgb(var(--accent));
+	}
+</style>
